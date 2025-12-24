@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>EliGon • EliGon</title>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../">
+        <img src="../assets/img/logo.svg" alt="EliGon logo"/>
+        <span>EliGon</span>
+      </a>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#info">Info</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="lang">
+        <a class="" href="../hu/">HU</a>
+        <a class="active" href="../en/">EN</a>
+        <a class="" href="../sr/">SR</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container hero" id="home">
+    <div class="grid">
+      <div class="card">
+        <h1 class="h1">EliGon</h1>
+        <p class="kicker">3D design • 3D printing • 3D scanning</p>
+        <div class="badges">
+          <span class="badge">3D CAD</span>
+          <span class="badge">FDM / AMS</span>
+          <span class="badge">3D scan</span>
+          <span class="badge">Prototípus</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="slider" data-slider>
+          <div class="slides">
+            <div class="slide"><img src="../assets/img/slide1.svg" alt="Slide 1"></div>
+            <div class="slide"><img src="../assets/img/slide2.svg" alt="Slide 2"></div>
+            <div class="slide"><img src="../assets/img/slide3.svg" alt="Slide 3"></div>
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="list">
+        <div class="item"><strong>3D CAD</strong><p>Design of custom parts, fixtures and prototypes (CAD).</p></div>
+        <div class="item"><strong>3D Printing</strong><p>Functional and aesthetic prints in multiple materials.</p></div>
+        <div class="item"><strong>3D Scanning</strong><p>Digitization, measurement and reverse engineering basics.</p></div>
+      </div>
+    </section>
+
+    <section id="info">
+      <h2>Info</h2>
+      <p>References and pricing depend on the project. Send a short brief with photos/dimensions and I’ll get back with a quote.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Message or call to discuss your idea.</p>
+      <div class="card" style="margin-top:10px">
+        <p><strong>Email:</strong> info@eligonstudio.com <span style="color:var(--muted)">(cseréld a sajátodra)</span></p>
+        <p><strong>Telefon:</strong> +381 … <span style="color:var(--muted)">(cseréld a sajátodra)</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> EliGon</footer>
+  <script src="../assets/js/script.js" defer></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
