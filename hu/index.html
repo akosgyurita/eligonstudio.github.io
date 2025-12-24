@@ -3,26 +3,41 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>EliGon Studio</title>
+
+  <title>EliGon Studio – 3D tervezés, 3D nyomtatás, 3D szkennelés</title>
+
+  <!-- CANONICAL – HU oldal -->
+  <link rel="canonical" href="https://eligonstudio.com/hu/" />
+
+  <!-- HREFLANG -->
+  <link rel="alternate" hreflang="hu" href="https://eligonstudio.com/hu/" />
+  <link rel="alternate" hreflang="en" href="https://eligonstudio.com/en/" />
+  <link rel="alternate" hreflang="sr" href="https://eligonstudio.com/sr/" />
+  <link rel="alternate" hreflang="x-default" href="https://eligonstudio.com/" />
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="../assets/css/style.css"/>
 </head>
+
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="../">
-        <img src="../assets/img/logo.svg" alt="EliGon logo"/>
+        <img src="../assets/img/logo.svg" alt="EliGon Studio logó"/>
         <span>EliGon Studio</span>
       </a>
+
       <nav class="menu">
         <a href="#home">Kezdőlap</a>
         <a href="#services">Szolgáltatások</a>
         <a href="#info">Információ</a>
         <a href="#contact">Kapcsolat</a>
       </nav>
+
       <div class="lang">
         <a class="active" href="../hu/">HU</a>
-        <a class="" href="../en/">EN</a>
-        <a class="" href="../sr/">SR</a>
+        <a href="../en/">EN</a>
+        <a href="../sr/">SR</a>
       </div>
     </div>
   </header>
@@ -30,8 +45,9 @@
   <main class="container hero" id="home">
     <div class="grid">
       <div class="card">
-        <h1 class="h1">EliGon</h1>
-        <p class="kicker">3D tervezés • 3D nyomtatás • 3D scannelés</p>
+        <h1 class="h1">EliGon Studio</h1>
+        <p class="kicker">3D tervezés • 3D nyomtatás • 3D szkennelés</p>
+
         <div class="badges">
           <span class="badge">3D CAD</span>
           <span class="badge">FDM / AMS</span>
@@ -39,16 +55,26 @@
           <span class="badge">Prototípus</span>
         </div>
       </div>
+
       <div class="card">
         <div class="slider" data-slider>
           <div class="slides">
-            <div class="slide"><img src="../assets/img/slide1.svg" alt="Slide 1"></div>
-            <div class="slide"><img src="../assets/img/slide2.svg" alt="Slide 2"></div>
-            <div class="slide"><img src="../assets/img/slide3.svg" alt="Slide 3"></div>
+            <div class="slide">
+              <img src="../assets/img/slide1.svg" alt="3D tervezési példa">
+            </div>
+            <div class="slide">
+              <img src="../assets/img/slide2.svg" alt="3D nyomtatási példa">
+            </div>
+            <div class="slide">
+              <img src="../assets/img/slide3.svg" alt="3D szkennelési példa">
+            </div>
           </div>
         </div>
+
         <div class="dots">
-          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
     </div>
@@ -56,36 +82,54 @@
     <section id="services">
       <h2>Szolgáltatások</h2>
       <div class="list">
-        <div class="item"><strong>3D CAD</strong><p>Egyedi alkatrészek, készülékek, prototípusok tervezése (CAD).</p></div>
-        <div class="item"><strong>3D nyomtatás</strong><p>Funkcionális és esztétikai nyomatok többféle anyagból.</p></div>
-        <div class="item"><strong>3D scannelés</strong><p>Tárgyak digitalizálása, mérés, reverse engineering alapok.</p></div>
+        <div class="item">
+          <strong>3D CAD</strong>
+          <p>Egyedi alkatrészek, készülékek és prototípusok tervezése professzionális CAD eszközökkel.</p>
+        </div>
+        <div class="item">
+          <strong>3D nyomtatás</strong>
+          <p>Funkcionális és esztétikai nyomatok többféle anyagból és technológiával.</p>
+        </div>
+        <div class="item">
+          <strong>3D szkennelés</strong>
+          <p>Tárgyak digitalizálása, mérés és reverse engineering alapok.</p>
+        </div>
       </div>
     </section>
 
     <section id="info">
       <h2>Információ</h2>
-      <p>A referenciák és pontos árak projektfüggők. Küldj egy rövid leírást és pár képet/méretet, és adok ajánlatot.</p>
+      <p>
+        A referenciák és a pontos árak projektfüggők.
+        Küldj egy rövid leírást, képeket vagy méreteket, és készítek ajánlatot.
+      </p>
     </section>
 
     <section id="contact">
       <h2>Kapcsolat</h2>
       <p>Írj vagy hívj, és egyeztetjük a részleteket.</p>
-      <div class="card" style="margin-top:10px">
-<p>
-  <strong>Email:</strong>
-  <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a>
-</p>
 
-<p>
-  <strong>Telefon:</strong>
-  <a href="tel:+381628390267">+381 62 839 0267</a>
-</p>
+      <div class="card" style="margin-top:10px">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a>
+        </p>
+
+        <p>
+          <strong>Telefon:</strong>
+          <a href="tel:+381628390267">+381 62 839 0267</a>
+        </p>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="y"></span> EliGon Studio</footer>
+  <footer>
+    © <span id="y"></span> EliGon Studio
+  </footer>
+
   <script src="../assets/js/script.js" defer></script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
