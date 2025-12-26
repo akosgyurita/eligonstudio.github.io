@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>EliGon Studio – 3D tervezés, 3D nyomtatás, 3D szkennelés</title>
+  <meta name="description"
+        content="EliGon Studio: 3D CAD tervezés, 3D nyomtatás, 3D szkennelés és Power BI dashboardok." />
 
-  <!-- CANONICAL – HU oldal -->
+  <!-- CANONICAL -->
   <link rel="canonical" href="https://eligonstudio.com/hu/" />
 
   <!-- HREFLANG -->
   <link rel="alternate" hreflang="hu" href="https://eligonstudio.com/hu/" />
   <link rel="alternate" hreflang="en" href="https://eligonstudio.com/en/" />
-  <link rel="alternate" hreflang="sr" href="https://eligonstudio.com/sr/" />
+  <link rel="alternate" hreflang="sr-Latn" href="https://eligonstudio.com/sr/" />
   <link rel="alternate" hreflang="x-default" href="https://eligonstudio.com/" />
 
   <!-- STYLES -->
@@ -20,116 +22,277 @@
 </head>
 
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="../">
-        <img src="../assets/img/logo1.svg" alt="EliGon Studio logó"/>
-        <span>EliGon Studio</span>
-      </a>
 
-      <nav class="menu">
-        <a href="#home">Kezdőlap</a>
-        <a href="#services">Szolgáltatások</a>
-        <a href="#info">Információ</a>
-        <a href="#contact">Kapcsolat</a>
-      </nav>
+<header>
+  <div class="container nav">
 
-      <div class="lang">
-        <a class="active" href="../hu/">HU</a>
-        <a href="../en/">EN</a>
-        <a href="../sr/">SR</a>
-      </div>
-    </div>
-  </header>
+    <!-- BRAND -->
+    <a class="brand" href="../hu/" aria-label="Vissza a kezdőlapra">
+      <img src="../assets/img/logo1.svg" alt="EliGon Studio logó"/>
+      <span>EliGon Studio</span>
+    </a>
 
-  <main class="container hero" id="home">
-    <div class="grid">
-      <div class="card">
-        <h1 class="h1">EliGon Studio</h1>
-        <p class="kicker">3D tervezés • 3D nyomtatás • 3D szkennelés</p>
+    <!-- HAMBURGER -->
+    <button class="burger"
+            aria-label="Menü megnyitása"
+            aria-expanded="false"
+            aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-        <div class="badges">
-          <span class="badge">3D CAD</span>
-          <span class="badge">FDM / AMS</span>
-          <span class="badge">3D scan</span>
-          <span class="badge">Prototípus</span>
-        </div>
-      </div>
+    <!-- MENU -->
+    <nav class="menu" id="main-menu" aria-label="Fő navigáció">
+      <a href="#home">Kezdőlap</a>
+      <a href="#services">Szolgáltatások</a>
+      <a href="#gallery">Galéria</a>
+      <a href="#info">Információ</a>
+      <a href="#contact">Kapcsolat</a>
+    </nav>
 
-      <div class="card">
-        <div class="slider" data-slider>
-          <div class="slides">
-            <div class="slide">
-              <img src="../assets/img/slide1.svg" alt="3D tervezési példa">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide2.svg" alt="3D nyomtatási példa">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide3.svg" alt="3D szkennelési példa">
-            </div>
-          </div>
-        </div>
-
-        <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-      </div>
+    <!-- LANG -->
+    <div class="lang" aria-label="Nyelvválasztó">
+      <a class="active" href="../hu/" aria-current="page">HU</a>
+      <a href="../en/">EN</a>
+      <a href="../sr/">SR</a>
     </div>
 
-    <section id="services">
-      <h2>Szolgáltatások</h2>
-      <div class="list">
-        <div class="item">
-          <strong>3D CAD</strong>
-          <p>Egyedi alkatrészek, készülékek és prototípusok tervezése professzionális CAD eszközökkel.</p>
-        </div>
-        <div class="item">
-          <strong>3D nyomtatás</strong>
-          <p>Funkcionális és esztétikai nyomatok többféle anyagból és technológiával.</p>
-        </div>
-        <div class="item">
-          <strong>3D szkennelés</strong>
-          <p>Tárgyak digitalizálása, mérés és reverse engineering alapok.</p>
-        </div>
-      </div>
-    </section>
+  </div>
+</header>
 
-    <section id="info">
-      <h2>Információ</h2>
-      <p>
-        A referenciák és a pontos árak projektfüggők.
-        Küldj egy rövid leírást, képeket vagy méreteket, és készítek ajánlatot.
+<main class="container" id="home">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="grid">
+
+    <div class="card">
+      <h1 class="h1">EliGon Studio</h1>
+      <p class="kicker">
+        3D tervezés • 3D nyomtatás • 3D szkennelés • Power BI dashboardok
       </p>
-    </section>
 
-    <section id="contact">
-      <h2>Kapcsolat</h2>
-      <p>Írj vagy hívj, és egyeztetjük a részleteket.</p>
-
-      <div class="card" style="margin-top:10px">
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a>
-        </p>
-
-        <p>
-          <strong>Telefon:</strong>
-          <a href="tel:+381628390267">+381 62 839 0267</a>
-        </p>
+      <div class="badges">
+        <span class="badge">3D CAD</span>
+        <span class="badge">3D scan</span>
+        <span class="badge">Prototípus</span>
+        <span class="badge">Power BI</span>
+        <span class="badge">Dashboard</span>
+        <span class="badge">Adatvizualizáció</span>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    © <span id="y"></span> EliGon Studio
-  </footer>
+      <p class="hero-desc">
+        Egyedi műszaki megoldások és adatvezérelt dashboardok
+        magánszemélyeknek és vállalatoknak.
+      </p>
+    </div>
 
-  <script src="../assets/js/script.js" defer></script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+    <div class="card">
+      <div class="slider" data-slider>
+        <div class="slides">
+          <div class="slide"><img src="../assets/img/slide1.jpg" alt=""></div>
+          <div class="slide"><img src="../assets/img/slide2.jpg" alt=""></div>
+          <div class="slide"><img src="../assets/img/slide3.jpg" alt=""></div>
+          <div class="slide"><img src="../assets/img/slide4.jpg" alt=""></div>
+          <div class="slide"><img src="../assets/img/slide5.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="dots">
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Szolgáltatások</h2>
+  <div class="list">
+    <div class="item"><strong>3D CAD</strong><p>Tervezés, prototípusok</p></div>
+    <div class="item"><strong>3D nyomtatás</strong><p>FDM nyomtatás</p></div>
+    <div class="item"><strong>3D szkennelés</strong><p>Digitalizálás</p></div>
+    <div class="item"><strong>Power BI</strong><p>Dashboard & KPI</p></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Galéria</h2>
+  <p>Válogatás a munkáimból. Kattints a képekre a nagyításhoz.</p>
+
+  <div class="filters" aria-label="Galéria szűrők">
+    <button class="f-btn active" type="button" data-filter="all">Összes</button>
+    <button class="f-btn" type="button" data-filter="cad">3D CAD</button>
+    <button class="f-btn" type="button" data-filter="print">3D nyomtatás</button>
+    <button class="f-btn" type="button" data-filter="scan">3D szken</button>
+    <button class="f-btn" type="button" data-filter="pbi">Power BI</button>
+  </div>
+
+  <div class="gallery">
+    <!-- 3D print (PR-01..PR-11) -->
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-01.jpg">
+      <img src="../assets/img/gallery/PR-01.jpg" alt="3D nyomtatott alkatrész – PR-01" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-02.jpg">
+      <img src="../assets/img/gallery/PR-02.jpg" alt="3D nyomtatott alkatrész – PR-02" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-03.jpg">
+      <img src="../assets/img/gallery/PR-03.jpg" alt="3D nyomtatott alkatrész – PR-03" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-04.jpg">
+      <img src="../assets/img/gallery/PR-04.jpg" alt="3D nyomtatott alkatrész – PR-04" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-05.jpg">
+      <img src="../assets/img/gallery/PR-05.jpg" alt="3D nyomtatott alkatrész – PR-05" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-06.jpg">
+      <img src="../assets/img/gallery/PR-06.jpg" alt="3D nyomtatott alkatrész – PR-06" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-07.jpg">
+      <img src="../assets/img/gallery/PR-07.jpg" alt="3D nyomtatott alkatrész – PR-07" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-08.jpg">
+      <img src="../assets/img/gallery/PR-08.jpg" alt="3D nyomtatott alkatrész – PR-08" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-09.jpg">
+      <img src="../assets/img/gallery/PR-09.jpg" alt="3D nyomtatott alkatrész – PR-09" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-10.jpg">
+      <img src="../assets/img/gallery/PR-10.jpg" alt="3D nyomtatott alkatrész – PR-10" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+    <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-11.jpg">
+      <img src="../assets/img/gallery/PR-11.jpg" alt="3D nyomtatott alkatrész – PR-11" loading="lazy">
+      <span class="g-cap">3D nyomtatás</span>
+    </a>
+
+    <!-- 3D CAD (CAD-01..CAD-05) -->
+    <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-01.jpg">
+      <img src="../assets/img/gallery/CAD-01.jpg" alt="3D CAD tervezés – CAD-01" loading="lazy">
+      <span class="g-cap">3D CAD</span>
+    </a>
+    <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-02.jpg">
+      <img src="../assets/img/gallery/CAD-02.jpg" alt="3D CAD tervezés – CAD-02" loading="lazy">
+      <span class="g-cap">3D CAD</span>
+    </a>
+    <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-03.jpg">
+      <img src="../assets/img/gallery/CAD-03.jpg" alt="3D CAD tervezés – CAD-03" loading="lazy">
+      <span class="g-cap">3D CAD</span>
+    </a>
+    <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-04.jpg">
+      <img src="../assets/img/gallery/CAD-04.jpg" alt="3D CAD tervezés – CAD-04" loading="lazy">
+      <span class="g-cap">3D CAD</span>
+    </a>
+    <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-05.jpg">
+      <img src="../assets/img/gallery/CAD-05.jpg" alt="3D CAD tervezés – CAD-05" loading="lazy">
+      <span class="g-cap">3D CAD</span>
+    </a>
+
+    <!-- 3D Scan (SC-01..SC-08) -->
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-01.jpg">
+      <img src="../assets/img/gallery/SC-01.jpg" alt="3D szkennelés – SC-01" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-02.jpg">
+      <img src="../assets/img/gallery/SC-02.jpg" alt="3D szkennelés – SC-02" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-03.jpg">
+      <img src="../assets/img/gallery/SC-03.jpg" alt="3D szkennelés – SC-03" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-04.jpg">
+      <img src="../assets/img/gallery/SC-04.jpg" alt="3D szkennelés – SC-04" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-05.jpg">
+      <img src="../assets/img/gallery/SC-05.jpg" alt="3D szkennelés – SC-05" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-06.jpg">
+      <img src="../assets/img/gallery/SC-06.jpg" alt="3D szkennelés – SC-06" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-07.jpg">
+      <img src="../assets/img/gallery/SC-07.jpg" alt="3D szkennelés – SC-07" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+    <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-08.jpg">
+      <img src="../assets/img/gallery/SC-08.jpg" alt="3D szkennelés – SC-08" loading="lazy">
+      <span class="g-cap">3D szken</span>
+    </a>
+
+    <!-- Power BI (pbi-01..pbi-03) -->
+    <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-01.jpg">
+      <img src="../assets/img/gallery/pbi-01.jpg" alt="Power BI dashboard – pbi-01" loading="lazy">
+      <span class="g-cap">Power BI</span>
+    </a>
+    <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-02.jpg">
+      <img src="../assets/img/gallery/pbi-02.jpg" alt="Power BI riport – pbi-02" loading="lazy">
+      <span class="g-cap">Power BI</span>
+    </a>
+    <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-03.jpg">
+      <img src="../assets/img/gallery/pbi-03.jpg" alt="Power BI dashboard – pbi-03" loading="lazy">
+      <span class="g-cap">Power BI</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- INFO -->
+<section id="info">
+  <h2>Információ</h2>
+  <p>Projektfüggő árak, egyedi megoldások.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Kapcsolat</h2>
+
+  <div class="card contact-card">
+    <p><strong>Személy:</strong>
+      <a href="https://www.linkedin.com/in/ako%C5%A1-%C4%91urita/" target="_blank">
+        Ákos Gyurita
+      </a>
+    </p>
+    <p><strong>Székhely:</strong> Subotica (Szabadka), Szerbia</p>
+    <p><strong>Email:</strong> <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a></p>
+    <p><strong>Telefon:</strong> <a href="tel:+381628390267">+381 62 839 0267</a></p>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close">×</button>
+  <img class="lb-img" alt="">
+</div>
+
+</main>
+
+<footer>
+  © <span id="y"></span> EliGon Studio
+</footer>
+
+<script src="../assets/js/script.js" defer></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
