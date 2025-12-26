@@ -4,15 +4,17 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <title>EliGon Studio – 3D Design, 3D Printing, 3D Scanning</title>
+  <title>EliGon Studio – 3D design, 3D printing, 3D scanning</title>
+  <meta name="description"
+        content="EliGon Studio: 3D CAD design, 3D printing, 3D scanning and Power BI dashboards." />
 
   <!-- CANONICAL -->
   <link rel="canonical" href="https://eligonstudio.com/en/" />
 
   <!-- HREFLANG -->
-  <link rel="alternate" hreflang="en" href="https://eligonstudio.com/en/" />
   <link rel="alternate" hreflang="hu" href="https://eligonstudio.com/hu/" />
-  <link rel="alternate" hreflang="sr" href="https://eligonstudio.com/sr/" />
+  <link rel="alternate" hreflang="en" href="https://eligonstudio.com/en/" />
+  <link rel="alternate" hreflang="sr-Latn" href="https://eligonstudio.com/sr/" />
   <link rel="alternate" hreflang="x-default" href="https://eligonstudio.com/" />
 
   <!-- STYLES -->
@@ -20,116 +22,276 @@
 </head>
 
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="../">
-        <img src="../assets/img/logo1.svg" alt="EliGon Studio logo"/>
-        <span>EliGon Studio</span>
-      </a>
 
-      <nav class="menu">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#info">Info</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header>
+  <div class="container nav">
 
-      <div class="lang">
-        <a href="../hu/">HU</a>
-        <a class="active" href="../en/">EN</a>
-        <a href="../sr/">SR</a>
-      </div>
+    <!-- BRAND -->
+    <a class="brand" href="../en/" aria-label="Back to home">
+      <img src="../assets/img/logo1.svg" alt="EliGon Studio logo"/>
+      <span>EliGon Studio</span>
+    </a>
+
+    <!-- HAMBURGER -->
+    <button class="burger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <nav class="menu" id="main-menu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#info">Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- LANG -->
+    <div class="lang" aria-label="Language switcher">
+      <a href="../hu/">HU</a>
+      <a class="active" href="../en/" aria-current="page">EN</a>
+      <a href="../sr/">SR</a>
     </div>
-  </header>
 
-  <main class="container hero" id="home">
+  </div>
+</header>
+
+<main class="container" id="home">
+
+  <!-- HERO -->
+  <section class="hero">
     <div class="grid">
+
       <div class="card">
         <h1 class="h1">EliGon Studio</h1>
-        <p class="kicker">3D design • 3D printing • 3D scanning</p>
+        <p class="kicker">
+          3D design • 3D printing • 3D scanning • Power BI dashboards
+        </p>
 
         <div class="badges">
           <span class="badge">3D CAD</span>
-          <span class="badge">FDM / AMS</span>
-          <span class="badge">3D Scan</span>
-          <span class="badge">Prototype</span>
+          <span class="badge">3D scan</span>
+          <span class="badge">Prototyping</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">Dashboard</span>
+          <span class="badge">Data visualization</span>
         </div>
+
+        <p class="hero-desc">
+          Custom engineering solutions and data-driven dashboards
+          for individuals and businesses.
+        </p>
       </div>
 
       <div class="card">
         <div class="slider" data-slider>
           <div class="slides">
-            <div class="slide">
-              <img src="../assets/img/slide1.svg" alt="3D design project example">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide2.svg" alt="3D printing example">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide3.svg" alt="3D scanning example">
-            </div>
+            <div class="slide"><img src="../assets/img/slide1.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide2.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide3.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide4.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide5.jpg" alt=""></div>
           </div>
         </div>
 
         <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <button class="dot" type="button" aria-label="Slide 1"></button>
+          <button class="dot" type="button" aria-label="Slide 2"></button>
+          <button class="dot" type="button" aria-label="Slide 3"></button>
+          <button class="dot" type="button" aria-label="Slide 4"></button>
+          <button class="dot" type="button" aria-label="Slide 5"></button>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="list">
+      <div class="item"><strong>3D CAD</strong><p>Design and prototyping</p></div>
+      <div class="item"><strong>3D printing</strong><p>FDM printing</p></div>
+      <div class="item"><strong>3D scanning</strong><p>Digitization</p></div>
+      <div class="item"><strong>Power BI</strong><p>Dashboards & KPIs</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>A selection of my work. Click images to open larger view.</p>
+
+    <div class="filters" aria-label="Gallery filters">
+      <button class="f-btn active" type="button" data-filter="all">All</button>
+      <button class="f-btn" type="button" data-filter="cad">3D CAD</button>
+      <button class="f-btn" type="button" data-filter="print">3D printing</button>
+      <button class="f-btn" type="button" data-filter="scan">3D scan</button>
+      <button class="f-btn" type="button" data-filter="pbi">Power BI</button>
     </div>
 
-    <section id="services">
-      <h2>Services</h2>
-      <div class="list">
-        <div class="item">
-          <strong>3D CAD</strong>
-          <p>Custom part design, fixtures and prototypes using professional CAD tools.</p>
-        </div>
-        <div class="item">
-          <strong>3D Printing</strong>
-          <p>Functional and aesthetic prints in multiple materials and technologies.</p>
-        </div>
-        <div class="item">
-          <strong>3D Scanning</strong>
-          <p>Digitization, basic measurement and reverse engineering support.</p>
-        </div>
-      </div>
-    </section>
+    <div class="gallery">
+      <!-- 3D print (PR-01..PR-11) -->
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-01.jpg">
+        <img src="../assets/img/gallery/PR-01.jpg" alt="3D printed part – PR-01" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-02.jpg">
+        <img src="../assets/img/gallery/PR-02.jpg" alt="3D printed part – PR-02" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-03.jpg">
+        <img src="../assets/img/gallery/PR-03.jpg" alt="3D printed part – PR-03" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-04.jpg">
+        <img src="../assets/img/gallery/PR-04.jpg" alt="3D printed part – PR-04" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-05.jpg">
+        <img src="../assets/img/gallery/PR-05.jpg" alt="3D printed part – PR-05" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-06.jpg">
+        <img src="../assets/img/gallery/PR-06.jpg" alt="3D printed part – PR-06" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-07.jpg">
+        <img src="../assets/img/gallery/PR-07.jpg" alt="3D printed part – PR-07" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-08.jpg">
+        <img src="../assets/img/gallery/PR-08.jpg" alt="3D printed part – PR-08" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-09.jpg">
+        <img src="../assets/img/gallery/PR-09.jpg" alt="3D printed part – PR-09" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-10.jpg">
+        <img src="../assets/img/gallery/PR-10.jpg" alt="3D printed part – PR-10" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-11.jpg">
+        <img src="../assets/img/gallery/PR-11.jpg" alt="3D printed part – PR-11" loading="lazy">
+        <span class="g-cap">3D printing</span>
+      </a>
 
-    <section id="info">
-      <h2>Info</h2>
-      <p>
-        Pricing and references depend on project complexity.
-        Send a short description with photos or dimensions and I will respond with a quote.
+      <!-- 3D CAD (CAD-01..CAD-05) -->
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-01.jpg">
+        <img src="../assets/img/gallery/CAD-01.jpg" alt="3D CAD design – CAD-01" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-02.jpg">
+        <img src="../assets/img/gallery/CAD-02.jpg" alt="3D CAD design – CAD-02" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-03.jpg">
+        <img src="../assets/img/gallery/CAD-03.jpg" alt="3D CAD design – CAD-03" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-04.jpg">
+        <img src="../assets/img/gallery/CAD-04.jpg" alt="3D CAD design – CAD-04" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-05.jpg">
+        <img src="../assets/img/gallery/CAD-05.jpg" alt="3D CAD design – CAD-05" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+
+      <!-- 3D Scan (SC-01..SC-08) -->
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-01.jpg">
+        <img src="../assets/img/gallery/SC-01.jpg" alt="3D scanning – SC-01" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-02.jpg">
+        <img src="../assets/img/gallery/SC-02.jpg" alt="3D scanning – SC-02" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-03.jpg">
+        <img src="../assets/img/gallery/SC-03.jpg" alt="3D scanning – SC-03" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-04.jpg">
+        <img src="../assets/img/gallery/SC-04.jpg" alt="3D scanning – SC-04" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-05.jpg">
+        <img src="../assets/img/gallery/SC-05.jpg" alt="3D scanning – SC-05" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-06.jpg">
+        <img src="../assets/img/gallery/SC-06.jpg" alt="3D scanning – SC-06" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-07.jpg">
+        <img src="../assets/img/gallery/SC-07.jpg" alt="3D scanning – SC-07" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-08.jpg">
+        <img src="../assets/img/gallery/SC-08.jpg" alt="3D scanning – SC-08" loading="lazy">
+        <span class="g-cap">3D scan</span>
+      </a>
+
+      <!-- Power BI (pbi-01..pbi-03) -->
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-01.jpg">
+        <img src="../assets/img/gallery/pbi-01.jpg" alt="Power BI dashboard – pbi-01" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-02.jpg">
+        <img src="../assets/img/gallery/pbi-02.jpg" alt="Power BI report – pbi-02" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-03.jpg">
+        <img src="../assets/img/gallery/pbi-03.jpg" alt="Power BI dashboard – pbi-03" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info">
+    <h2>Info</h2>
+    <p>Pricing depends on the project. Tell me what you need and I’ll prepare an offer.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card contact-card">
+      <p><strong>Person:</strong>
+        <a href="https://www.linkedin.com/in/ako%C5%A1-%C4%91urita/" target="_blank" rel="noopener noreferrer">
+          Ákos Gyurita
+        </a>
       </p>
-    </section>
+      <p><strong>Location:</strong> Subotica, Serbia</p>
+      <p><strong>Email:</strong> <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+381628390267">+381 62 839 0267</a></p>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Get in touch to discuss your idea.</p>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="Close">×</button>
+    <img class="lb-img" alt="">
+  </div>
 
-      <div class="card" style="margin-top:10px">
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a>
-        </p>
+</main>
 
-        <p>
-          <strong>Phone:</strong>
-          <a href="tel:+381628390261">+381 62 839 0261</a>
-        </p>
-      </div>
-    </section>
-  </main>
+<footer>
+  © <span id="y"></span> EliGon Studio
+</footer>
 
-  <footer>
-    © <span id="y"></span> EliGon Studio
-  </footer>
+<script src="../assets/js/script.js" defer></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
-  <script src="../assets/js/script.js" defer></script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
