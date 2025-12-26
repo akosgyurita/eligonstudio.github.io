@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
   <title>EliGon Studio – 3D dizajn, 3D štampa, 3D skeniranje</title>
+  <meta name="description"
+        content="EliGon Studio: 3D CAD dizajn, 3D štampa, 3D skeniranje i Power BI dashboardi." />
 
-  <!-- CANONICAL – SR (latin) oldal -->
+  <!-- CANONICAL -->
   <link rel="canonical" href="https://eligonstudio.com/sr/" />
 
   <!-- HREFLANG -->
-  <link rel="alternate" hreflang="sr-Latn" href="https://eligonstudio.com/sr/" />
   <link rel="alternate" hreflang="hu" href="https://eligonstudio.com/hu/" />
   <link rel="alternate" hreflang="en" href="https://eligonstudio.com/en/" />
+  <link rel="alternate" hreflang="sr-Latn" href="https://eligonstudio.com/sr/" />
   <link rel="alternate" hreflang="x-default" href="https://eligonstudio.com/" />
 
   <!-- STYLES -->
@@ -20,116 +22,276 @@
 </head>
 
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="../">
-        <img src="../assets/img/logo1.svg" alt="EliGon Studio logo"/>
-        <span>EliGon Studio</span>
-      </a>
 
-      <nav class="menu">
-        <a href="#home">Početna</a>
-        <a href="#services">Usluge</a>
-        <a href="#info">Informacije</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
+<header>
+  <div class="container nav">
 
-      <div class="lang">
-        <a href="../hu/">HU</a>
-        <a href="../en/">EN</a>
-        <a class="active" href="../sr/">SR</a>
-      </div>
+    <!-- BRAND -->
+    <a class="brand" href="../sr/" aria-label="Nazad na početnu stranu">
+      <img src="../assets/img/logo1.svg" alt="EliGon Studio logo"/>
+      <span>EliGon Studio</span>
+    </a>
+
+    <!-- HAMBURGER -->
+    <button class="burger"
+            aria-label="Otvori meni"
+            aria-expanded="false"
+            aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <nav class="menu" id="main-menu" aria-label="Glavna navigacija">
+      <a href="#home">Početna</a>
+      <a href="#services">Usluge</a>
+      <a href="#gallery">Galerija</a>
+      <a href="#info">Informacije</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- LANG -->
+    <div class="lang" aria-label="Izbor jezika">
+      <a href="../hu/">HU</a>
+      <a href="../en/">EN</a>
+      <a class="active" href="../sr/" aria-current="page">SR</a>
     </div>
-  </header>
 
-  <main class="container hero" id="home">
+  </div>
+</header>
+
+<main class="container" id="home">
+
+  <!-- HERO -->
+  <section class="hero">
     <div class="grid">
+
       <div class="card">
         <h1 class="h1">EliGon Studio</h1>
-        <p class="kicker">3D dizajn • 3D štampa • 3D skeniranje</p>
+        <p class="kicker">
+          3D dizajn • 3D štampa • 3D skeniranje • Power BI dashboardi
+        </p>
 
         <div class="badges">
           <span class="badge">3D CAD</span>
-          <span class="badge">FDM / AMS</span>
           <span class="badge">3D scan</span>
           <span class="badge">Prototip</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">Dashboard</span>
+          <span class="badge">Vizualizacija podataka</span>
         </div>
+
+        <p class="hero-desc">
+          Inženjerska rešenja po meri i dashboardi zasnovani na podacima
+          za pojedince i kompanije.
+        </p>
       </div>
 
       <div class="card">
         <div class="slider" data-slider>
           <div class="slides">
-            <div class="slide">
-              <img src="../assets/img/slide1.svg" alt="Primer 3D dizajna">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide2.svg" alt="Primer 3D štampe">
-            </div>
-            <div class="slide">
-              <img src="../assets/img/slide3.svg" alt="Primer 3D skeniranja">
-            </div>
+            <div class="slide"><img src="../assets/img/slide1.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide2.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide3.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide4.jpg" alt=""></div>
+            <div class="slide"><img src="../assets/img/slide5.jpg" alt=""></div>
           </div>
         </div>
 
         <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <button class="dot" type="button" aria-label="Slajd 1"></button>
+          <button class="dot" type="button" aria-label="Slajd 2"></button>
+          <button class="dot" type="button" aria-label="Slajd 3"></button>
+          <button class="dot" type="button" aria-label="Slajd 4"></button>
+          <button class="dot" type="button" aria-label="Slajd 5"></button>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Usluge</h2>
+    <div class="list">
+      <div class="item"><strong>3D CAD</strong><p>Dizajn i prototipovi</p></div>
+      <div class="item"><strong>3D štampa</strong><p>FDM štampa</p></div>
+      <div class="item"><strong>3D skeniranje</strong><p>Digitalizacija</p></div>
+      <div class="item"><strong>Power BI</strong><p>Dashboardi i KPI</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Galerija</h2>
+    <p>Izbor mojih radova. Kliknite na slike za uvećanje.</p>
+
+    <div class="filters" aria-label="Filteri galerije">
+      <button class="f-btn active" type="button" data-filter="all">Sve</button>
+      <button class="f-btn" type="button" data-filter="cad">3D CAD</button>
+      <button class="f-btn" type="button" data-filter="print">3D štampa</button>
+      <button class="f-btn" type="button" data-filter="scan">3D sken</button>
+      <button class="f-btn" type="button" data-filter="pbi">Power BI</button>
     </div>
 
-    <section id="services">
-      <h2>Usluge</h2>
-      <div class="list">
-        <div class="item">
-          <strong>3D CAD</strong>
-          <p>Projektovanje prilagođenih delova, naprava i prototipova (CAD).</p>
-        </div>
-        <div class="item">
-          <strong>3D štampa</strong>
-          <p>Funkcionalni i estetski otisci od različitih materijala.</p>
-        </div>
-        <div class="item">
-          <strong>3D skeniranje</strong>
-          <p>Digitalizacija, merenje i osnove reverse engineering-a.</p>
-        </div>
-      </div>
-    </section>
+    <div class="gallery">
+      <!-- 3D štampa (PR-01..PR-11) -->
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-01.jpg">
+        <img src="../assets/img/gallery/PR-01.jpg" alt="3D štampani deo – PR-01" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-02.jpg">
+        <img src="../assets/img/gallery/PR-02.jpg" alt="3D štampani deo – PR-02" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-03.jpg">
+        <img src="../assets/img/gallery/PR-03.jpg" alt="3D štampani deo – PR-03" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-04.jpg">
+        <img src="../assets/img/gallery/PR-04.jpg" alt="3D štampani deo – PR-04" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-05.jpg">
+        <img src="../assets/img/gallery/PR-05.jpg" alt="3D štampani deo – PR-05" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-06.jpg">
+        <img src="../assets/img/gallery/PR-06.jpg" alt="3D štampani deo – PR-06" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-07.jpg">
+        <img src="../assets/img/gallery/PR-07.jpg" alt="3D štampani deo – PR-07" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-08.jpg">
+        <img src="../assets/img/gallery/PR-08.jpg" alt="3D štampani deo – PR-08" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-09.jpg">
+        <img src="../assets/img/gallery/PR-09.jpg" alt="3D štampani deo – PR-09" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-10.jpg">
+        <img src="../assets/img/gallery/PR-10.jpg" alt="3D štampani deo – PR-10" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
+      <a class="g-item" data-cat="print" href="../assets/img/gallery/PR-11.jpg">
+        <img src="../assets/img/gallery/PR-11.jpg" alt="3D štampani deo – PR-11" loading="lazy">
+        <span class="g-cap">3D štampa</span>
+      </a>
 
-    <section id="info">
-      <h2>Informacije</h2>
-      <p>
-        Reference i cene zavise od projekta.
-        Pošalji kratak opis sa slikama ili dimenzijama i poslaću ponudu.
+      <!-- 3D CAD (CAD-01..CAD-05) -->
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-01.jpg">
+        <img src="../assets/img/gallery/CAD-01.jpg" alt="3D CAD dizajn – CAD-01" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-02.jpg">
+        <img src="../assets/img/gallery/CAD-02.jpg" alt="3D CAD dizajn – CAD-02" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-03.jpg">
+        <img src="../assets/img/gallery/CAD-03.jpg" alt="3D CAD dizajn – CAD-03" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-04.jpg">
+        <img src="../assets/img/gallery/CAD-04.jpg" alt="3D CAD dizajn – CAD-04" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+      <a class="g-item" data-cat="cad" href="../assets/img/gallery/CAD-05.jpg">
+        <img src="../assets/img/gallery/CAD-05.jpg" alt="3D CAD dizajn – CAD-05" loading="lazy">
+        <span class="g-cap">3D CAD</span>
+      </a>
+
+      <!-- 3D sken (SC-01..SC-08) -->
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-01.jpg">
+        <img src="../assets/img/gallery/SC-01.jpg" alt="3D skeniranje – SC-01" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-02.jpg">
+        <img src="../assets/img/gallery/SC-02.jpg" alt="3D skeniranje – SC-02" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-03.jpg">
+        <img src="../assets/img/gallery/SC-03.jpg" alt="3D skeniranje – SC-03" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-04.jpg">
+        <img src="../assets/img/gallery/SC-04.jpg" alt="3D skeniranje – SC-04" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-05.jpg">
+        <img src="../assets/img/gallery/SC-05.jpg" alt="3D skeniranje – SC-05" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-06.jpg">
+        <img src="../assets/img/gallery/SC-06.jpg" alt="3D skeniranje – SC-06" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-07.jpg">
+        <img src="../assets/img/gallery/SC-07.jpg" alt="3D skeniranje – SC-07" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+      <a class="g-item" data-cat="scan" href="../assets/img/gallery/SC-08.jpg">
+        <img src="../assets/img/gallery/SC-08.jpg" alt="3D skeniranje – SC-08" loading="lazy">
+        <span class="g-cap">3D sken</span>
+      </a>
+
+      <!-- Power BI (pbi-01..pbi-03) -->
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-01.jpg">
+        <img src="../assets/img/gallery/pbi-01.jpg" alt="Power BI dashboard – pbi-01" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-02.jpg">
+        <img src="../assets/img/gallery/pbi-02.jpg" alt="Power BI izveštaj – pbi-02" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+      <a class="g-item" data-cat="pbi" href="../assets/img/gallery/pbi-03.jpg">
+        <img src="../assets/img/gallery/pbi-03.jpg" alt="Power BI dashboard – pbi-03" loading="lazy">
+        <span class="g-cap">Power BI</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="info">
+    <h2>Informacije</h2>
+    <p>Cene zavise od projekta. Pošaljite kratak opis i pripremiću ponudu.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+
+    <div class="card contact-card">
+      <p><strong>Osoba:</strong>
+        <a href="https://www.linkedin.com/in/ako%C5%A1-%C4%91urita/" target="_blank" rel="noopener noreferrer">
+          Ákos Gyurita
+        </a>
       </p>
-    </section>
+      <p><strong>Lokacija:</strong> Subotica (Szabadka), Srbija</p>
+      <p><strong>Email:</strong> <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a></p>
+      <p><strong>Telefon:</strong> <a href="tel:+381628390267">+381 62 839 0267</a></p>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Piši ili pozovi da dogovorimo detalje.</p>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="Zatvori">×</button>
+    <img class="lb-img" alt="">
+  </div>
 
-      <div class="card" style="margin-top:10px">
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@eligonstudio.com">info@eligonstudio.com</a>
-        </p>
+</main>
 
-        <p>
-          <strong>Telefon:</strong>
-          <a href="tel:+381628390261">+381 62 839 0261</a>
-        </p>
-      </div>
-    </section>
-  </main>
+<footer>
+  © <span id="y"></span> EliGon Studio
+</footer>
 
-  <footer>
-    © <span id="y"></span> EliGon Studio
-  </footer>
+<script src="../assets/js/script.js" defer></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
-  <script src="../assets/js/script.js" defer></script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
