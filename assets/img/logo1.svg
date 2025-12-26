@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 200"
+     role="img"
+     aria-label="EliGon 3D print emblem white">
+
+  <!-- One solid shape: filled hexagon with E cutout (even-odd fill rule) -->
+  <path fill="#ffffff" fill-rule="evenodd" d="
+    M100 10
+    L170 50
+    L170 150
+    L100 190
+    L30 150
+    L30 50
+    Z
+
+    M72 58
+    H136
+    V74
+    H88
+    V92
+    H126
+    V108
+    H88
+    V126
+    H136
+    V142
+    H72
+    Z
+  "/>
+</svg>
+
